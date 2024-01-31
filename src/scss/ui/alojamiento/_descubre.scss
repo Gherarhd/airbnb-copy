@@ -1,0 +1,23 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.descubre {
+
+
+  
+  &__grid {
+    margin-top: 3rem;
+    @include m.grid(2, 2rem);
+    @include m.tablet {
+      @include m.grid(4, 4rem);
+    }
+  }
+  &__heading {
+    text-align: center;
+    @include m.tablet {
+      text-align: left;
+    }
+  }
+}
+
+

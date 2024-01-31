@@ -1,0 +1,47 @@
+@use'base/variables' as v;
+@use'base/mixins' as m;
+
+.footer{
+    background-color: v.$grisClaro;;
+    border-top: 1px solid #cccccc;
+
+
+    &__grid{
+
+        @include m.telefono { 
+            @include m.grid(2,2rem);
+            text-align: center
+         }
+
+        @include m.tablet { 
+            @include m.grid(4,2rem);
+         }
+    }
+
+
+
+
+
+    &__heading{
+     
+        margin: 1rem 0;
+    }
+
+    &__enlace{
+        display: block;
+        padding-bottom: 1.5rem;
+        color: #484848;
+    }
+
+    &__copy{
+        text-align: center;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color:#484848;
+        margin: 0 auto;
+        padding: 2rem;
+        border-top: 1px solid #cccccc;
+     
+
+    }
+}
